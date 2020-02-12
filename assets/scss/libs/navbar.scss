@@ -1,0 +1,22 @@
+.navbar-desktop{
+    background-color: transparent;
+    border-bottom: 1px solid $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+}
+
+.navbar-desktop > .nav-wrapper{ //nav-wrapper is an element ul
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    @include reset-list;
+}
+
+.navbar-desktop  .nav__link{
+    color: $white;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}

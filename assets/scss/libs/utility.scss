@@ -1,0 +1,12 @@
+// On declare notre background fixed
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Poppins|Raleway&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom,$dark-top,$dark-bottom),url('../img/rsz_background_desktop-computer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    @include reset-space;
+}
