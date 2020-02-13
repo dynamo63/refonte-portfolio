@@ -1,0 +1,54 @@
+.introduction{
+    width: 95%;
+    height: 90vh;
+    margin:10vh auto 0;
+    color: $white;
+
+    > div{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.introduction__title{
+    text-align: center;
+    font-family: 'Poiret One',Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7em;
+    text-decoration: underline;
+}
+
+
+.introduction__content{
+    
+    padding: 1em;
+    @include test-block($white);
+    strong{
+        color: $green;
+    }
+
+    p:first-child::first-letter{
+        font-size: 3.5em;
+        float: left;
+        font-family: 'Dancing Script';
+    }
+
+}
+
+.introduction__link{
+
+    display: flex;
+    justify-content: space-between;
+
+    > a{
+        color: $gray;
+        font-size: 1.2em;
+        text-decoration: none;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+}

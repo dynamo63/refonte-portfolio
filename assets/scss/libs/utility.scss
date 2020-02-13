@@ -1,6 +1,10 @@
 // On declare notre background fixed
 
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Poppins|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Poiret+One|Fredoka+One|Poppins|Raleway&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-image: linear-gradient(to bottom,$dark-top,$dark-bottom),url('../img/rsz_background_desktop-computer.jpg');

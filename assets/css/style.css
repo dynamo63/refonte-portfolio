@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Poppins|Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Poiret+One|Fredoka+One|Poppins|Raleway&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: linear-gradient(to bottom, #0c0b0bf3, #0c0b0bee), url("../img/rsz_background_desktop-computer.jpg");
   background-size: cover;
@@ -22,9 +26,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 9vh;
-  position: -webkit-sticky;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 .navbar-desktop > .nav-wrapper {
@@ -47,6 +52,7 @@ header {
   height: 90vh;
   display: flex;
   flex-direction: column;
+  margin-top: 10vh;
 }
 header > section {
   height: 85vh;
@@ -92,6 +98,52 @@ header > section {
   color: #a09b9b86;
 }
 .header__contact i:hover {
+  color: #ffffff;
+}
+
+.introduction {
+  width: 95%;
+  height: 90vh;
+  margin: 10vh auto 0;
+  color: #ffffff;
+}
+.introduction > div {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.introduction__title {
+  text-align: center;
+  font-family: "Poiret One", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7em;
+  text-decoration: underline;
+}
+
+.introduction__content {
+  padding: 1em;
+  border: 1px solid #ffffff;
+}
+.introduction__content strong {
+  color: #38EF7D;
+}
+.introduction__content p:first-child::first-letter {
+  font-size: 3.5em;
+  float: left;
+  font-family: "Dancing Script";
+}
+
+.introduction__link {
+  display: flex;
+  justify-content: space-between;
+}
+.introduction__link > a {
+  color: #a09b9b86;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.introduction__link > a:hover {
   color: #ffffff;
 }
 
