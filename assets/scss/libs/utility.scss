@@ -7,6 +7,12 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 100vh;
     @include reset-space;
+}
+
+.hidden{
+    display: none;
 }

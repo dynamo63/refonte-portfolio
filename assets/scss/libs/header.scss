@@ -1,0 +1,60 @@
+header{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+
+    > section{
+        height: 85vh;
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding-top: 2em;
+    }
+}
+
+.header__description{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    color: $white;
+
+    p{
+        line-height: 4em;
+    }
+
+    p > span{
+        font-family: 'Raleway',Arial, Helvetica, sans-serif;
+        font-size: 1.6em;
+    }
+
+    strong{
+        font-family: 'Fredoka One',Arial, Helvetica, sans-serif;
+        font-size: 2em;
+    }
+}
+
+.header__description--start > p > a{
+    color: $white;
+}
+
+.header__profil > img{
+    width: 80%;
+    height: 95%;
+}
+
+.header__contact{
+
+    i{
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 1.5em;
+        color: $gray;
+    }
+
+    i:hover{
+        color: $white;
+    }
+
+}

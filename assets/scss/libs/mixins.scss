@@ -7,3 +7,7 @@
     @include reset-space;
     list-style-type: none;
 }
+
+@mixin test-block($color) {
+    border: 1px solid $color;
+}
