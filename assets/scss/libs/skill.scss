@@ -1,0 +1,106 @@
+.skill{
+    height: $h-90;
+    margin-top: $mt-10;
+    // @include test-block(blue);
+
+    > div{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+// Style des bars de progression
+
+.bar{
+    width: 100%;
+    height: 5px;
+    background-color: $dark-bottom;
+
+    .progress__bar{
+        background-color: $white;
+        height: 100%;
+    }
+}
+
+.skill__progress_bar > div{
+    margin-bottom: 1em;
+}
+
+.info__bar > span{
+    float: right;
+}
+
+.html5{
+    width: 90%;
+}
+
+.css3{
+    width: 85%;
+}
+
+.javascript{
+    width: 70%;
+}
+
+.python3{
+    width: 80%;
+}
+
+.php{
+    width: 10%;
+}
+
+.mysql{
+    width: 50%;
+}
+
+.skill__boxes{
+    position: relative;
+    width: 20%;
+    height: auto;
+
+    & .skill__box:last-child{
+        animation-name: anime--box2;
+    }
+
+    & .skill__box:first-child{
+        animation-name: anime--box1;
+    }
+}
+
+// Skill Service
+
+.skill__box{
+    text-align: center;
+    position: absolute;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+
+    > ul{
+        @include reset-list;
+    }
+}
+
+@keyframes anime--box1{
+    0%,50%{
+        opacity: 1;
+    }
+
+    51%,100%{
+        opacity: 0;
+    }
+}
+
+@keyframes anime--box2{
+    0%,50%{
+        opacity: 0;
+    }
+
+    51%,100%{
+        opacity: 1;
+    }
+}

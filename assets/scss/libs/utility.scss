@@ -15,8 +15,16 @@ body{
     font-family: 'Poppins',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 100vh;
     @include reset-space;
+    color: $white;
 }
 
 .hidden{
     display: none;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Poiret One',Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7em;
+    text-decoration: underline;
 }
