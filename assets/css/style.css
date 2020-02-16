@@ -357,6 +357,27 @@ ul .timeline__item:nth-child(even) {
     color: coral;
   }
 }
+@media all and (max-width: 1280px) {
+  header {
+    height: auto;
+  }
+
+  .introduction {
+    height: auto;
+  }
+
+  .skill {
+    height: 55vh;
+  }
+
+  .projects {
+    width: 100%;
+    height: auto;
+  }
+  .projects .card {
+    width: 35vw;
+  }
+}
 /* Responsive sur mobile */
 @media all and (max-width: 600px) {
   body {
@@ -491,6 +512,101 @@ ul .timeline__item:nth-child(even) {
     border: 1px solid #ffffff;
     left: 48%;
     top: 130%;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 1024px) {
+  /*--------------- Section header ---------------*/
+  header {
+    height: auto;
+    margin: 0;
+    display: block;
+  }
+  header > section {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .header__profil {
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+  .header__profil > img {
+    width: 100%;
+  }
+
+  .header__contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  /*-------------Section Project -------------------*/
+  .projects {
+    width: 94%;
+    margin: 0 auto 2em;
+  }
+
+  .card {
+    width: 60vw;
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px #00000036;
+  }
+  .card:hover .card__content {
+    transform: none;
+  }
+  .card .card__content {
+    position: initial;
+    transform: initial;
+    flex: 1;
+  }
+  .card .card__img {
+    flex: 1;
+  }
+
+  .card__content > div {
+    border: none;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0 1em;
+  }
+
+  /*-------------Section skills -----------------*/
+  .skill {
+    height: auto;
+    margin: 1em auto 2em;
+  }
+
+  .skill__boxes {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .skill__boxes > .skill__box:first-child {
+    animation-name: none;
+    animation-duration: 0s;
+  }
+  .skill__boxes > .skill__box:last-child {
+    animation-name: none;
+    animation-duration: 0s;
+  }
+
+  .skill__box {
+    position: initial;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*---------Section About me --------*/
+  .introduction {
+    margin: 2em auto;
+    height: auto;
   }
 }
 

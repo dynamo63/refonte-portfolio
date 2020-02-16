@@ -16,3 +16,33 @@
         color: coral; 
     }
 }
+
+@media all and (max-width:1280px){
+
+    header{
+        height: auto;
+    }
+
+    .header__profil{
+        // height: 50%;
+    }
+
+    .introduction{
+        height: auto;
+    }
+
+    .skill{
+        height: 55vh;
+    }
+
+    .projects{
+        width: 100%;
+        height: auto;
+
+        .card{
+            width: 35vw;
+        }
+    }
+
+
+}
