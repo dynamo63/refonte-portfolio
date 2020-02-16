@@ -1,10 +1,10 @@
 .skill{
     height: $h-90;
     margin-top: $mt-10;
-    // @include test-block(blue);
 
     > div{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         width: 80%;
         margin: auto;

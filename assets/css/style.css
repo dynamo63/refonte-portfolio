@@ -16,7 +16,7 @@ body {
   color: #ffffff;
 }
 
-.hidden {
+.hide-on-desktop {
   display: none;
 }
 
@@ -64,6 +64,7 @@ header {
 header > section {
   height: 85%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   box-sizing: border-box;
   padding-top: 2em;
@@ -153,6 +154,7 @@ header > section {
 }
 .skill > div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 80%;
   margin: auto;
@@ -353,6 +355,142 @@ ul .timeline__item:nth-child(even) {
   .nav__link {
     font-size: 8em;
     color: coral;
+  }
+}
+/* Responsive sur mobile */
+@media all and (max-width: 600px) {
+  body {
+    background-image: linear-gradient(to bottom, #0c0b0bf3, #0c0b0bee), url("../img/rsz_gray-metal-cubes-decorative-1005644.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  /* Pour le header */
+  header {
+    height: auto;
+    margin-bottom: 2em;
+  }
+
+  .banner__mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner__img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+  .banner__img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+  }
+
+  .banner__description p {
+    text-align: center;
+    line-height: 40px;
+  }
+
+  /* Section About me */
+  .introduction {
+    width: 95%;
+    height: auto;
+    margin-top: 5em;
+  }
+
+  /* Section Competences */
+  .skill {
+    height: auto;
+    margin: 1em auto 2em;
+  }
+
+  .skill__boxes {
+    width: 90%;
+    height: auto;
+  }
+  .skill__boxes > .skill__box:first-child {
+    animation-name: none;
+    animation-duration: 0s;
+  }
+  .skill__boxes > .skill__box:last-child {
+    animation-name: none;
+    animation-duration: 0s;
+  }
+
+  .skill__box {
+    position: initial;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*  ----------Section Projects ---------- */
+  .projects {
+    width: 94%;
+    margin: 1em auto 2em;
+  }
+
+  .card {
+    width: 60vw;
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px #00000036;
+  }
+  .card:hover .card__content {
+    transform: none;
+  }
+  .card .card__content {
+    position: initial;
+    transform: initial;
+  }
+
+  .card__content > div {
+    border: none;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0 1em;
+  }
+
+  /*-------------Section Parcours -------------*/
+  .timeline {
+    width: 90%;
+  }
+
+  ul .timeline__item {
+    display: flex;
+    justify-content: flex-start;
+  }
+  ul .timeline__item:nth-child(odd) {
+    flex-direction: row;
+    text-align: left;
+  }
+  ul .timeline__item .timeline__content {
+    width: 90%;
+  }
+
+  .line-1, .line-2 {
+    position: relative;
+  }
+  .line-1::before, .line-2::before {
+    content: "";
+    position: absolute;
+    width: 0.1px;
+    height: 200%;
+    border: 1px solid #ffffff;
+    left: 48%;
+    top: 130%;
   }
 }
 
