@@ -1,0 +1,49 @@
+.timeline{
+    width: 80%;
+    margin: 2em auto;
+
+    ul{
+        @include reset-list;
+    }
+}
+
+ul .timeline__item{
+    display: flex;
+    justify-content: center;
+
+    &:nth-child(odd){
+        flex-direction: row-reverse;
+        text-align: right;
+        justify-content: flex-end;
+    }
+
+    &:nth-child(even){
+        justify-content: flex-end;
+    }
+}
+
+.timeline__before{
+    margin: 1.5em 1em;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    @include test-block($white,2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $green;
+    font-size: 1.2em;
+    padding: .3em;
+}
+
+.timeline__content{
+    width: 50%;
+}

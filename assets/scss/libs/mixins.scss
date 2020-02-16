@@ -8,6 +8,6 @@
     list-style-type: none;
 }
 
-@mixin test-block($color) {
-    border: 1px solid $color;
+@mixin test-block($color,$len:1px) {
+    border: $len solid $color;
 }
