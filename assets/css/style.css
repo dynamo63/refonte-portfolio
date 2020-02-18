@@ -454,6 +454,11 @@ ul .timeline__item:nth-child(even) {
     flex-direction: column;
     justify-content: center;
   }
+  .skill__box .skill__box__img > img {
+    margin: auto;
+    width: 60%;
+    object-fit: cover;
+  }
 
   /*  ----------Section Projects ---------- */
   .projects {
@@ -462,7 +467,7 @@ ul .timeline__item:nth-child(even) {
   }
 
   .card {
-    width: 60vw;
+    min-width: 60vw;
     position: initial;
     display: flex;
     flex-direction: column;
