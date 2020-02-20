@@ -6,6 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 body{
     background-image: linear-gradient(to bottom,$dark-top,$dark-bottom),url('../img/rsz_background_desktop-computer.jpg');
     background-size: cover;
@@ -19,6 +20,10 @@ body{
 }
 
 .hide-on-desktop{
+    display: none;
+}
+
+.hidden{
     display: none;
 }
 

@@ -11,3 +11,10 @@
 @mixin test-block($color,$len:1px) {
     border: $len solid $color;
 }
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -moz-transform: $transform;
+    transform: $transform;
+}

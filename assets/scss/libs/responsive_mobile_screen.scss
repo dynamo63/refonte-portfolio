@@ -1,5 +1,6 @@
 /* Responsive sur mobile */
-@media all and (max-width:600px){
+
+@media all and (max-width:699px){
 
     body{
         background-image: linear-gradient(to bottom,$dark-top,$dark-bottom),url('../img/rsz_gray-metal-cubes-decorative-1005644.jpg');
@@ -8,13 +9,89 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         height: 100vh;
+        overflow-x: hidden;
     }
 
     .hide-on-mobile{
-        display: none;
+        display: none !important;
     }
 
-    /* Pour le header */
+    /* ------------ NavBar ---------------- */
+
+    .nav-mobile__button{
+        position: fixed;
+        top: 2%;
+        left: 2%;
+        right:0;
+        max-width: 40px;
+        height: 30px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        padding: 0.375em 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        z-index: 999;
+    
+        > i{
+            background-color: $dark-top;
+            width: 100%;
+            height: 2px;
+            transition: transform .5s ease-out,opacity .4s;
+        }
+    
+    }
+    
+    .nav-mobile__wrapper{
+        top: 0;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #161515a6;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include reset-list;
+        @include transform(translateX(-100%));
+        transition: transform .5s ease-in;
+        
+
+        > li > a{
+            padding: 0 1em 0 .5em;
+            text-decoration: none;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+
+    #btn-mobile:checked + .nav-mobile__button{
+
+        @include transform(rotate(360deg));
+
+        i:first-child{
+            @include transform(translateY(0.9vh) rotate(45deg));
+        }
+
+        i:nth-child(2){
+            opacity: 0;
+        }
+
+        i:last-child{
+            @include transform(translateY(-1vh) rotate(-45deg));
+        }
+
+    }
+
+    #btn-mobile:checked ~ .nav-mobile__wrapper{
+        @include transform(translateX(0));
+    }
+
+    /* ------------ Header --------------- */
 
     header {
         height: auto;
@@ -87,7 +164,7 @@
         }
     }
 
-    /*  ----------Section Projects ---------- */
+    /*  ---------- Section Projects ---------- */
     .projects{
         width: 94%;
         margin: 1em auto 2em;
@@ -119,7 +196,7 @@
         padding: 0 1em;
     }
 
-    /*-------------Section Parcours -------------*/
+    /*------------- Section Parcours -------------*/
 
     .timeline{
         width: 90%;
@@ -131,7 +208,7 @@
     
         &:nth-child(odd){
             flex-direction: row;
-            text-align: left    ;
+            text-align: left;
         }
 
         .timeline__content{

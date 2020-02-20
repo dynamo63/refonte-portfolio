@@ -1,25 +1,93 @@
 .navbar-desktop{
-    background-color: transparent;
-    border-bottom: 1px solid $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 9vh;
-    width: 100%;
     position: fixed;
-    top: 0; 
-}
-
-.navbar-desktop > .nav-wrapper{ //nav-wrapper is an element ul
     width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    @include reset-list;
+    top: 3%;
+    left: 5%;
+    z-index: 999;
+    max-height: 2vh;
 }
 
-.navbar-desktop  .nav__link{
-    color: $white;
-    font-family: 'Poppins',Arial, Helvetica, sans-serif;
-    text-decoration: none;
+.nav__inner{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav__button{
+    min-width: 50px;
+    height: auto;
+    background-color: #00000096;
+    box-sizing: border-box;
+    padding: 1em 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform .5s ease-out;
+
+    > i{
+        background-color: $white;
+        width: 100%;
+        height: 1px;
+        transition: transform .5s ease-out,opacity .4s;
+    }
+
+}
+
+.nav__wrapper{
+    @include reset-list;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #000000d0;
+    padding: 1em 1.2em;
+    transform-origin: left;
+    @include transform(scaleX(0));
+    transition: transform .35s ease-in;
+    overflow-y: hidden;
+
+    .nav__link{
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        opacity: 0;
+        transition: opacity 1s ease-in;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: #000000d0;
+        transition: all .4s ease-in-out;
+    }
+}
+
+.nav__link:hover{
+    border-bottom-color: $white;
+}
+
+/* -------------- Animation du bouton checkbox ----------------*/
+
+#btn-nav:checked + .nav__inner > .nav__button {
+
+    @include transform(rotate(360deg));
+
+    i:first-child{
+        @include transform(translateY(1vh) rotate(45deg));
+    }
+
+    i:nth-child(2){
+        opacity: 0;
+    }
+
+    i:last-child{
+        @include transform(translateY(-1.5vh) rotate(-45deg));
+    }
+}
+
+#btn-nav:checked + .nav__inner > .nav__wrapper{
+
+    @include transform(scaleX(1));
+
+    .nav__link{
+        opacity: 1;
+    }
 }

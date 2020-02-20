@@ -4,6 +4,18 @@
     .header__profil{
         width: 40%;
     }
+
+    #btn-nav:checked + .nav__inner > .nav__button {
+    
+        i:first-child{
+            @include transform(translateY(0) rotate(45deg));
+        }
+    
+        i:last-child{
+            @include transform(translateY(-1vh) rotate(-45deg));
+        }
+    }
+
 }
 
 @media screen and (min-width:1440px){
@@ -11,10 +23,25 @@
         width: 40%;
     }
 
-    .nav__link{
-        font-size: 8em;
-        color: coral; 
+    nav{
+        height: 4vh;
     }
+
+    .nav__button > i{
+        height: 2px;
+    }
+
+    #btn-nav:checked + .nav__inner > .nav__button {
+    
+        i:first-child{
+            @include transform(translateY(1vh) rotate(45deg));
+        }
+    
+        i:last-child{
+            @include transform(translateY(-1vh) rotate(-45deg));
+        }
+    }
+
 }
 
 @media all and (max-width:1280px){
@@ -40,5 +67,10 @@
         }
     }
 
+    /*--------------- Section navbar----------*/
+
+    .nav__button > i{
+        height: 1.5px;
+    }
 
 }

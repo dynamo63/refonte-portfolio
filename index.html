@@ -22,7 +22,52 @@
     <!-- barre de navigation pour bureau -->
     <nav class="navbar-desktop hide-on-mobile">
 
-        <ul class="nav-wrapper">
+        <input type="checkbox" id="btn-nav" class="hidden"/>
+
+        <section class="nav__inner">
+
+            <label for="btn-nav" class="nav__button">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+    
+            <ul class="nav__wrapper">
+                <li>
+                    <a href="#" class="nav__link">Accueil</a>
+                </li>
+                <li>
+                    <a href="#about-me" class="nav__link">A Propos de moi</a>
+                </li>
+                <li>
+                    <a href="#skill" class="nav__link">Competences</a>
+                </li>
+                <li>
+                    <a href="#project" class="nav__link">Realisations</a>
+                </li>
+                <li>
+                    <a href="#course" class="nav__link">Parcours</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">CV</a>
+                </li>
+            </ul>
+
+        </section>
+
+    </nav>
+
+    <nav class="navbar-mobile show-on-mobile">
+
+        <input type="checkbox" id="btn-mobile" class="hidden"/>
+
+        <label for="btn-mobile" class="nav-mobile__button">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+
+        <ul class="nav-mobile__wrapper">
             <li>
                 <a href="#" class="nav__link">Accueil</a>
             </li>
@@ -94,11 +139,13 @@
             </div>
 
             <div class="banner__description">
+
                 <p>
                     Salut! je m'appelle <br>
                     <strong> MOUCKEYTOU MOULONGUI </strong> <br>
                     <span> Developpeur FullStack </span>
                 </p>
+
             </div>
 
         </section>
