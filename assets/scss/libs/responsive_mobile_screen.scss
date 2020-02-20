@@ -58,6 +58,9 @@
         @include transform(translateX(-100%));
         transition: transform .5s ease-in;
         
+        > li{
+            margin: 1em 0;
+        }
 
         > li > a{
             padding: 0 1em 0 .5em;
@@ -65,7 +68,7 @@
             color: $white;
             text-transform: uppercase;
             font-size: 1.5em;
-            font-weight: bold;
+            font-weight: 600;
         }
     }
 
@@ -171,7 +174,7 @@
     }
 
     .card{
-        min-width: 60vw;
+        min-width: 84vw;
         position: initial;
         display: flex;
         flex-direction: column;
