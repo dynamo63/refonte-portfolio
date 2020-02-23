@@ -230,4 +230,16 @@
             top: 130%;
         }
     }
+
+    #blog > iframe{
+        min-height: 80vh;
+    }
+
+    /* -------- Section Footer ---------*/
+
+    .footer__link{
+        color: $white;
+        margin: 0 .275em;
+        font-size: 1.2em;
+    }
 }
