@@ -55,6 +55,12 @@
         align-items: flex-end;
     }
 
+    /*---------Section About me --------*/
+    .introduction{
+        margin: 2em auto;
+        height: auto;
+    }
+
     /*-------------Section Project -------------------*/
     .projects{
         width: 94%;
@@ -124,11 +130,10 @@
         justify-content: center;
     }
 
-    /*---------Section About me --------*/
-    .introduction{
-        margin: 2em auto;
-        height: auto;
+    #blog > iframe{
+        height: 40vh;
     }
+    
 }
 
 @media all and (min-width:700px){
