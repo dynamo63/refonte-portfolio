@@ -175,7 +175,6 @@
 
     .card{
         min-width: 84vw;
-        position: initial;
         display: flex;
         flex-direction: column;
         margin-bottom: 1em;
@@ -187,7 +186,7 @@
 
         .card__content{
             position: initial;
-            transform: initial;
+            transform: none;
         }
 
     }
@@ -234,15 +233,38 @@
         }
     }
 
-    #blog > iframe{
-        min-height: 80vh;
-    }
-
     /* -------- Section Footer ---------*/
 
     .footer__link{
         color: $white;
         margin: 0 .275em;
         font-size: 1.2em;
+    }
+}
+
+@media all and (max-width:450px){
+
+    .skill__boxes{
+        flex-direction: column;
+    }
+
+    .skill__box__img > img{
+        width: 85% !important;
+    }
+
+    .card{
+        flex-direction: column !important;
+    }
+
+    .timeline{
+        width: 100%;
+    }
+
+    .line-1,.line-2{
+        &::before{
+            position: initial;
+            display: none;
+        }
+        
     }
 }

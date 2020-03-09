@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Cache control -->
+    <meta http-equiv="Cache-Control" content="max-age=600" /> 
+
     <!-- meta for provide image to whatsapp link -->
     <meta property="og:title" content="Mouckeytou Moulongui" />
     <meta property="og:description" content="Mon Portfolio numerique uniquement en HTML5/CSS3" />
@@ -20,7 +23,7 @@
 
     <!-- assets: css files  -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
 
     <title>
         MOUCKEYTOU MOULONGUI Sabil Mohammed : Developpeur Web a l'Ecole241
@@ -43,25 +46,22 @@
     
             <ul class="nav__wrapper">
                 <li>
-                    <a href="#" class="nav__link">Accueil</a>
+                    <a href="#" target="_self" class="nav__link">Accueil</a>
                 </li>
                 <li>
-                    <a href="#about-me" class="nav__link">A Propos de moi</a>
+                    <a href="#about-me" target="_self" class="nav__link">A Propos de moi</a>
                 </li>
                 <li>
-                    <a href="#skill" class="nav__link">Competences</a>
+                    <a href="#skill" target="_self" class="nav__link">Competences</a>
                 </li>
                 <li>
-                    <a href="#project" class="nav__link">Realisations</a>
+                    <a href="#project" target="_self" class="nav__link">Realisations</a>
                 </li>
                 <li>
-                    <a href="#course" class="nav__link">Parcours</a>
+                    <a href="#course" target="_self" class="nav__link">Parcours</a>
                 </li>
                 <li>
-                    <a href="#blog" class="nav__link">Blog</a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link">CV</a>
+                    <a href="#" target="_self" class="nav__link">CV</a>
                 </li>
             </ul>
 
@@ -81,25 +81,22 @@
 
         <ul class="nav-mobile__wrapper">
             <li>
-                <a href="#" class="nav__link">Accueil</a>
+                <a href="#" class="nav__link" target="_self">Accueil</a>
             </li>
             <li>
-                <a href="#about-me" class="nav__link">A Propos de moi</a>
+                <a href="#about-me" class="nav__link" target="_self">A Propos de moi</a>
             </li>
             <li>
-                <a href="#skill" class="nav__link">Competences</a>
+                <a href="#skill" class="nav__link" target="_self">Competences</a>
             </li>
             <li>
-                <a href="#project" class="nav__link">Realisations</a>
+                <a href="#project" class="nav__link" target="_self">Realisations</a>
             </li>
             <li>
-                <a href="#course" class="nav__link">Parcours</a>
+                <a href="#course" class="nav__link" target="_self">Parcours</a>
             </li>
             <li>
-                <a href="#blog" class="nav__link">blog</a>
-            </li>
-            <li>
-                <a href="#" class="nav__link">CV</a>
+                <a href="#" class="nav__link" target="_self">CV</a>
             </li>
         </ul>
 
@@ -437,11 +434,6 @@
 
             </div>
 
-        </section>
-
-        <section id="blog">
-            <h1 class="title">Blog</h1>
-            <iframe src='https://www.sociablekit.com/app/embed/34879' frameborder='0' width='100%' height='auto'></iframe>
         </section>
 
     </main>
