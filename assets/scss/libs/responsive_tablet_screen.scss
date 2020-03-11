@@ -63,12 +63,12 @@
 
     /*-------------Section Project -------------------*/
     .projects{
-        width: 94%;
+        width: 96%;
         margin: 0 auto 2em;
     }
 
     .card{
-        width: 60vw;
+        min-width: 70vw;
         position: initial;
         display: flex;
         flex-direction: row;
